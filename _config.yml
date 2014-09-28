@@ -1,0 +1,11 @@
+# Site settings
+title: OAuth2 me
+email: dudkin.dmitriy@gmail.com
+description: >
+  Service for redirecting the OAuth2 requests.
+baseurl: "" 
+url: "http://tmwh.github.io/oauth2-me"
+github_username:  tmwh
+
+# Build settings
+markdown: kramdown
