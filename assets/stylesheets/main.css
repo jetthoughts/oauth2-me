@@ -149,7 +149,7 @@ a:after {
 /* Green */
 #green {
 	background-color: #74cfae;
-	padding-top: 50px;
+	padding-top: 15px;
 	margin-bottom: 0px;
 }
 
@@ -212,6 +212,11 @@ a:after {
 	color: white;
 	text-align: right;
 	font-weight: 400;
+}
+
+.img-on-green {
+  margin-top: -15px;
+  padding-right: 15px;
 }
 
 /* Image Opacity */
