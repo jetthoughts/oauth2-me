@@ -65,34 +65,43 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row centered mt grid">
-        <div></div>
-        <div class="mt"></div>
-        <div class="col-lg-4">
-          <a href="#"><img src="assets/img/01.jpg" alt=""></a>
+    <div class="container smaller">
+      <div class="row  mt grid">
+        <h3 class="centered">How to use it?</h3>
+        <div class="prettyprint">
+          <ol>
+            <li>Set your redirect uri to http://oauth2.me/redirect</li>
+            <li>
+              Your application should use the state parameter to pass your redirect URI encoded with
+              <a href="http://en.wikipedia.org/wiki/Base64">base64</a>
+            </li>
+          </ol>
+          <span>
+            We've created a ruby gem for easy integration with your Ruby/Rails project:
+            <a href="https://github.com/jetthoughts/oauth2-me-ruby">https://github.com/jetthoughts/oauth2-me-ruby</a>
+          </span>
         </div>
-        <div class="col-lg-4">
-          <a href="#"><img src="assets/img/02.jpg" alt=""></a>
-        </div>
-        <div class="col-lg-4">
-          <a href="#"><img src="assets/img/03.jpg" alt=""></a>
-        </div>
-      </div>
-
-      <div class="row centered mt grid">
-        <div class="mt"></div>
-        <div class="col-lg-4">
-          <a href="#"><img src="assets/img/04.jpg" alt=""></a>
-        </div>
-        <div class="col-lg-4">
-          <a href="#"><img src="assets/img/05.jpg" alt=""></a>
-        </div>
-        <div class="col-lg-4">
-          <a href="#"><img src="assets/img/06.jpg" alt=""></a>
+        <br><br><br>
+        <h3 class="centered">How to install your own OAuth2.me?</h3>
+        <div class="prettyprint">
+          <ol>
+            <li> Make a fork of <a href="https://github.com/jetthoughts/oauth2-me">our repository</a></li>
+            <li>Remove the `CNAME` file from the root.</li>
+            <li>Wait until github will compile the website for you.</li>
+          </ol>
         </div>
       </div>
     </div>
+
+  <div id="skills">
+    <div class="container">
+      <div class="row centered white-text">
+        <h3>Important</h3>
+Do not use OAuth2.me service on your production server. It is using the <a href="https://tools.ietf.org/html/rfc6749#section-4.1.1">state parameter</a> to redirect you to right server.<br>
+Normally, you should use it to protect your application from <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)">CSRF attacks</a>.
+      </div>
+    </div>
+  </div>
 
     <section id="contact"></section>
     <div id="social">

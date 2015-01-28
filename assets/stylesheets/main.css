@@ -219,6 +219,27 @@ a:after {
   padding-right: 15px;
 }
 
+div.prettyprint {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  margin-bottom: 0;
+  padding: 9.5px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+div.prettyprint li {
+  padding: 5px;
+}
+
+.smaller {
+  width: 50%;
+}
+
+.white-text {
+  color: #fff;
+}
+
 /* Image Opacity */
 .grid img {
     opacity: .7;
