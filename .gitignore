@@ -3,3 +3,4 @@ _site/
 error.html
 divshot.json
 .divshot-cache
+divshot-debug.log

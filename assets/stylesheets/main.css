@@ -44,6 +44,10 @@ p {
     text-align: center;
 }
 
+.text_left {
+	text-align: left;
+}
+
 .mt {
 	margin-top: 40px;
 }
@@ -228,8 +232,30 @@ div.prettyprint {
   padding-left: 15px;
 }
 
-div.prettyprint li {
-  padding: 5px;
+div.prettyprint li.active > a {
+  background-color: #dddddd;
+}
+
+div.prettyprint li.active > a:hover {
+  background-color: #D3D3D3;
+}
+
+div.prettyprint li.active > a:focus {
+  background-color: #dddddd;
+}
+
+.img-on-skills {
+  height: 100px;
+  width: 100%;
+}
+
+.big_number {
+	font-size: 30px;
+}
+
+.testi {
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 .smaller {

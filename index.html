@@ -49,12 +49,9 @@
     <div id="green">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 centered">
+          <div class="col-lg-12 centered">
             <img class="img-on-green" src="assets/img/oauth2me.png" alt="">
-          </div>
-
-          <div class="col-lg-6">
-            <h3 class="centered">WHAT IS IT?</h3>
+             <h3 class="centered">WHAT IS IT?</h3>
             <p>Using a branch-per-feature git flow, you might have a trouble with quality assurance and testing, if your project is closely connected with <b>OAuth 2</b> providers like Google, Facebook etc). In such a case you need to update the list of callbacks manually to let your QAs to login into the separate branches and test the features.
             </p><a name="use_it"></a>
             <p>
@@ -65,30 +62,42 @@
       </div>
     </div>
 
-    <div class="container smaller">
-      <div class="row  mt grid">
-        <h3 class="centered">How to use it?</h3>
-        <div class="prettyprint">
-          <ol>
-            <li>Set your redirect uri to http://oauth2.me/redirect</li>
-            <li>
-              Your application should use the state parameter to pass your redirect URI encoded with
-              <a href="http://en.wikipedia.org/wiki/Base64">base64</a>
-            </li>
-          </ol>
-          <span>
-            We've created a ruby gem for easy integration with your Ruby/Rails project:
-            <a href="https://github.com/jetthoughts/oauth2-me-ruby">https://github.com/jetthoughts/oauth2-me-ruby</a>
-          </span>
-        </div>
-        <br><br><br>
-        <h3 class="centered">How to install your own OAuth2.me?</h3>
-        <div class="prettyprint">
-          <ol>
-            <li> Make a fork of <a href="https://github.com/jetthoughts/oauth2-me">our repository</a></li>
-            <li>Remove the `CNAME` file from the root.</li>
-            <li>Wait until github will compile the website for you.</li>
-          </ol>
+    <div class="container">
+      <div class="row mt grid">
+        <div class="col-lg-12 prettyprint">
+          <div class="tabs">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab-1" data-toggle="tab">EASY SETUP FOR RAILS</a></li>
+              <li><a href="#tab-2" data-toggle="tab">PLATFORM-INDEPENDET SETUP</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tab-1">
+                <div class="row testi">
+                  <div class="col-lg-5">
+                    <div class="highlight">
+                      <pre class="rails" style="font-family:monospace;">gem <span style="color:#996600;">'oauth2-me'</span>, github: <span style="color:#996600;">'jetthoughts/oauth2-me-ruby'</span></pre>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 text_left">
+                    Add this line to your application's Gemfile:
+                  </div>
+                </div>
+                <div class="row testi">
+                  <div class="col-lg-8 text_left">
+                    And then execute:
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="highlight">
+                      <pre>$ bundle</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-2">
+                <p>Text2</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -96,9 +105,23 @@
   <div id="skills">
     <div class="container">
       <div class="row centered white-text">
-        <h3>Important</h3>
-Do not use OAuth2.me service on your production server. It is using the <a href="https://tools.ietf.org/html/rfc6749#section-4.1.1">state parameter</a> to redirect you to right server.<br>
-Normally, you should use it to protect your application from <a href="https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)">CSRF attacks</a>.
+        <h3>YOUR OWN OAUTH<span class="big_number">2</span>ME ON GITHUB</h3>
+        <div class="row testi">
+          <div class="col-lg-4">
+            <img class="img-on-skills" src="assets/img/05.jpg" alt="">
+          </div>
+          <div class="col-lg-8 text_left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="row testi">
+          <div class="col-lg-8 text_left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="col-lg-4">
+            <img class="img-on-skills" src="assets/img/02.jpg" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -137,6 +160,6 @@ Normally, you should use it to protect your application from <a href="https://ww
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/javascripts/bootstrap.js"></script>
   </body>
 </html>
