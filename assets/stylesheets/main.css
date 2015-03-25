@@ -54,7 +54,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #7b7b7b;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -234,6 +234,14 @@ div.prettyprint {
   border-radius: 5px;
   padding-left: 15px;
   padding-bottom: 30px;
+}
+
+div.prettyprint li > a {
+  border: solid 1px #d0d0d0;
+}
+
+div.prettyprint li > a:hover {
+  border: solid 1px #d0d0d0;
 }
 
 div.prettyprint li.active > a {
