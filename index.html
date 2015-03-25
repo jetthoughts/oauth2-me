@@ -52,7 +52,7 @@
           <div class="col-lg-12 centered">
             <img class="img-on-green" src="assets/img/oauth2me.png" alt="">
              <h3 class="centered">WHAT IS IT?</h3>
-            <p>Using a branch-per-feature git flow, you might have a trouble with quality assurance and testing, if your project is closely connected with <b>OAuth 2</b> providers like Google, Facebook etc). In such a case you need to update the list of callbacks manually to let your QAs to login into the separate branches and test the features.
+            <p>Using a branch-per-feature git flow, you might have a trouble with quality assurance and testing, if your project is closely connected with <b>OAuth 2</b> providers like Google, Facebook etc. In such a case you need to update the list of callbacks manually to let your QAs to login into the separate branches and test the features.
             </p><a name="use_it"></a>
             <p>
               We created <b>OAuth2.me</b> service to set the callback url only once.
@@ -68,33 +68,42 @@
           <div class="tabs">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab-1" data-toggle="tab">EASY SETUP FOR RAILS</a></li>
-              <li><a href="#tab-2" data-toggle="tab">PLATFORM-INDEPENDET SETUP</a></li>
+              <li><a href="#tab-2" data-toggle="tab">PLATFORM-INDEPENDENT SETUP</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade in active" id="tab-1">
-                <div class="row testi">
-                  <div class="col-lg-5">
-                    <div class="highlight">
-                      <pre class="rails" style="font-family:monospace;">gem <span style="color:#996600;">'oauth2-me'</span>, github: <span style="color:#996600;">'jetthoughts/oauth2-me-ruby'</span></pre>
+                <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row testi">
+                      For installation OAuth2Me, you need to add gem to your application's Gemfile.
                     </div>
-                  </div>
-                  <div class="col-lg-7 text_left">
-                    Add this line to your application's Gemfile:
-                  </div>
-                </div>
-                <div class="row testi">
-                  <div class="col-lg-8 text_left">
-                    And then execute:
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="highlight">
-                      <pre>$ bundle</pre>
+
+                    <div class="row testi">
+                      <div class="highlight">
+                        <pre class="rails" style="font-family:monospace;">gem <span style="color:#996600;">'oauth2-me'</span></pre>
+                      </div>
+                    </div>
+
+                    <div class="row testi">
+                      And then execute:
+                    </div>
+                    <div class="row testi">
+                      <div class="highlight">
+                        <pre>$ bundle</pre>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="tab-2">
-                <p>Text2</p>
+                <div class="row">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    <h3>How to install your own OAuth2.me?</h3>
+                    <div class="testi">Make a fork of our repository <a href="https://github.com/tmwh/oauth2-me-ruby/fork">https://github.com/tmwh/oauth2-me-ruby/fork </a></div>
+                    <div class="testi">Remove the `CNAME` file from the root.</div>
+                    <div class="testi">Wait until github will compile the website for you.</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -105,22 +114,24 @@
   <div id="skills">
     <div class="container">
       <div class="row centered white-text">
+        <div class="col-lg-8 col-lg-offset-2">
         <h3>YOUR OWN OAUTH<span class="big_number">2</span>ME ON GITHUB</h3>
         <div class="row testi">
           <div class="col-lg-4">
             <img class="img-on-skills" src="assets/img/05.jpg" alt="">
           </div>
-          <div class="col-lg-8 text_left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="col-lg-8 text_left below">
+            For each new projects you should go to on OAuth2 provider site and setup new app. So with this gem you do not need it at all.
           </div>
         </div>
         <div class="row testi">
-          <div class="col-lg-8 text_left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="col-lg-8 text_left below_2">
+            You want to share your public app which use OAuth2 and you want to add Deploy to Heroku button in order to have one-click installation you should use our gem. So user should not setup their app on oauth2 providers in order to check how your app works.
           </div>
           <div class="col-lg-4">
             <img class="img-on-skills" src="assets/img/02.jpg" alt="">
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -150,7 +161,7 @@
         </div>
       </div><!-- /container -->
     </div><!-- /social -->
-    <br><br><br><br>
+
 
 
     <div id="f">
