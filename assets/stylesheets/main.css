@@ -257,7 +257,7 @@ div.prettyprint li.active > a:focus {
 }
 
 .below {
-  padding-top: 25px;
+  padding-top: 0px;
   padding-left: 10px;
 }
 
@@ -266,8 +266,15 @@ div.prettyprint li.active > a:focus {
   padding-right: 10px;
 }
 
-.img-on-skills {
-  height: 170px;
+.img-on-skills1 {
+  margin-bottom: -20px;
+  height: 250px;
+  width: 100%;
+}
+
+.img-on-skills2 {
+  margin-top: -170px;
+  height: 300px;
   width: 100%;
 }
 
