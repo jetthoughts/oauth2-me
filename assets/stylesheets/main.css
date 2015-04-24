@@ -1,0 +1,315 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Bolt - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.mt {
+	margin-top: 40px;
+}
+
+/* Links */
+a {
+    color: #7b7b7b;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Bootstrap Modifications */
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #74cfae;
+  margin-right: 5px;
+}
+
+.navbar-brand {
+	font-size: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.btn-theme {
+	color: #ffffff;
+	background-color: #74cfae;
+	border-color: transparent;
+}
+
+.btn {
+	padding: 10px 30px;
+	margin-bottom: 0;
+	font-size: 18px;
+	border: 5px solid transparent;
+	border-radius: 0px;
+}
+
+.lead {
+	letter-spacing: 1px;
+}
+
+/* WRAP SECTIONS */
+
+/* hello */
+#hello {
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+#hello h1 {
+	font-size: 90px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #74cfae;
+}
+
+#hello h2 {
+	color: #c0c0c0;
+	font-weight: 400;
+}
+
+/* Green */
+#green {
+	background-color: #74cfae;
+	padding-top: 15px;
+	margin-bottom: 0px;
+}
+
+#green h3 {
+	color: white;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+#green p {
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/* Skills */
+#skills {
+	background-color: #4e4e4e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+#skills h3 {
+	color: white;
+}
+
+#skills p {
+	color: white;
+	font-weight: 400;
+}
+
+#tab-2 h4 {
+  padding-left: 19px;
+  padding-top: 20px;
+}
+
+#tab-2 li > a {
+  border: none;
+}
+
+/* Social Links */
+#social {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#social i {
+	font-size: 50px;
+	color: #74cfae;
+}
+
+#social .col-md-2:hover {
+	padding-top: 5px;
+}
+
+#social .col-md-2 {
+	overflow: hidden;
+	padding-top: 20px;
+	transition: all ease-in .5s;
+	padding:30px;
+}
+
+/* Footer */
+#f {
+	padding-top: 20px;
+	background-color: #74cfae;
+}
+
+#f p {
+	color: white;
+	text-align: right;
+	font-weight: 400;
+}
+
+.img-on-green {
+  margin-top: -15px;
+  padding-right: 15px;
+}
+
+div.prettyprint {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  margin-bottom: 0;
+  padding: 9.5px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+div.prettyprint li > a {
+  border: solid 1px #d0d0d0;
+}
+
+div.prettyprint li > a:hover {
+  border: solid 1px #d0d0d0;
+}
+
+div.prettyprint li.active > a {
+  background-color: #dddddd;
+}
+
+div.prettyprint li.active > a:hover {
+  background-color: #D3D3D3;
+}
+
+div.prettyprint li.active > a:focus {
+  background-color: #dddddd;
+}
+
+.below {
+  padding-top: 0px;
+  padding-left: 10px;
+}
+
+.below_2 {
+  padding-top: 25px;
+  padding-right: 10px;
+}
+
+.img-on-skills1 {
+  margin-bottom: -20px;
+  height: 120px;
+  width: 100%;
+}
+
+.img-on-skills2 {
+  margin-top: -40px;
+  height: 140px;
+  width: 100%;
+}
+
+.big_number {
+	font-size: 16px;
+}
+
+.testi {
+	padding-top: 20px;
+}
+.exhale {
+	background-color: #D3D3D3;
+}
+
+.smaller {
+  width: 50%;
+}
+
+.white-text {
+  color: #fff;
+}
+
+/* Image Opacity */
+.grid img {
+    opacity: .7;
+}
+.grid img:hover {
+    opacity: 1;
+}

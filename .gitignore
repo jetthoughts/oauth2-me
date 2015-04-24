@@ -1,2 +1,6 @@
 _site/
 *.sw*
+error.html
+divshot.json
+.divshot-cache
+divshot-debug.log

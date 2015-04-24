@@ -1,10 +1,191 @@
 <html>
 <head>
-  <title>OAuth2 me</title>
-  <link href="//fonts.googleapis.com/css?family=Noto+Sans:400italic,400,700italic,700" rel="stylesheet" type="text/css">
-  <link href="/assets/stylesheets/main.css" rel="stylesheet" type="text/css">
+  <title>OAuth2.me - Domain Name Independence</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/stylesheets/main.css" rel="stylesheet">
+    <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/javascripts/chart.js"></script>
 </head>
-<body>
-  <h1 id="coming">Everything will be made, but after awhile.</h1>
-</body>
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-gear"></i></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#use_it">How to use</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <div id="hello">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+              <h1>OAuth2.me</h1>
+              <h2>
+                DOMAIN NAME INDEPENDENCE
+              </h2>
+            </div><!-- /col-lg-8 -->
+          </div><!-- /row -->
+        </div> <!-- /container -->
+    </div><!-- /hello -->
+
+    <div id="green">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 centered">
+            <img class="img-on-green" src="assets/img/oauth2me.png" alt="">
+             <h3 class="centered">WHAT IS IT?</h3>
+            <p>Using a branch-per-feature git flow, you might have a trouble with quality assurance and testing, if your project is closely connected with <b>OAuth 2</b> providers like Google, Facebook etc. In such a case you need to update the list of callbacks manually to let your QAs to login into the separate branches and test the features.
+            </p><a name="use_it"></a>
+            <p>
+              We created <b>OAuth2.me</b> service to set the callback url only once.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt grid">
+        <div class="col-lg-12 prettyprint">
+          <div class="tabs">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab-1" data-toggle="tab">EASY SETUP FOR RAILS</a></li>
+              <li><a href="#tab-2" data-toggle="tab">PLATFORM-INDEPENDENT SETUP</a></li>
+              <li><a href="#tab-3" data-toggle="tab">YOUR OWN OAUTH<span class="big_number">2</span>ME ON GITHUB</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row testi">
+                      For installation OAuth2Me, you need to add gem to your application's Gemfile.
+                    </div>
+
+                    <div class="row testi">
+                      <div class="highlight">
+                        <pre class="rails" style="font-family:monospace;">gem <span style="color:#996600;">'oauth2-me'</span></pre>
+                      </div>
+                    </div>
+
+                    <div class="row testi">
+                      And then execute:
+                    </div>
+                    <div class="row testi">
+                      <div class="highlight">
+                        <pre>$ bundle</pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    <h4>To use oauth2.me service you need to:</h4>
+                    <ol>
+                      <li>
+                        Set your redirect uri to <a href="http://oauth2.me/redirect">http://oauth2.me/redirect</a>
+                      </li>
+                      <li>
+                        Your application should use the state parameter to pass your redirect URI encoded with base64
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    <div class="testi">How to install your own OAuth2.me?</div>
+                    <div class="testi">Make a fork of our repository <a href="https://github.com/tmwh/oauth2-me-ruby/fork">https://github.com/tmwh/oauth2-me-ruby/fork </a></div>
+                    <div class="testi">Remove the `CNAME` file from the root.</div>
+                    <div class="testi">Wait until github will compile the website for you.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div id="skills">
+    <div class="container">
+      <div class="row centered white-text">
+        <div class="col-lg-12">
+          <div class="row testi">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img class="img-on-skills1" src="assets/img/1.png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text_left below">
+              For each new projects you should go to on OAuth2 provider site and setup new app. So with this gem you do not need it at all.
+            </div>
+          </div>
+          <div class="row testi">
+            <div class="col-lg-6 col-md-6 col-sm-6 text_left below_2">
+              You want to share your public app which use OAuth2 and you want to add Deploy to Heroku button in order to have one-click installation you should use our gem. So user should not setup their app on oauth2 providers in order to check how your app works.
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img class="img-on-skills2" src="assets/img/2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section id="contact"></section>
+    <div id="social">
+      <div class="container">
+        <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-3">
+            <div class="col-md-2">
+              <a href="http://www.jetthoughts.com/"><i class="fa fa-home"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://www.facebook.com/jetthoughts"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://twitter.com/jetthoughts"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://github.com/jetthoughts"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a href="https://www.linkedin.com/company/jetthoughts"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /container -->
+    </div><!-- /social -->
+
+
+
+    <div id="f">
+      <div class="container"><br><br><br></div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/javascripts/bootstrap.js"></script>
+  </body>
 </html>
