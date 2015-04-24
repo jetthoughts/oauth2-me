@@ -69,6 +69,7 @@
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab-1" data-toggle="tab">EASY SETUP FOR RAILS</a></li>
               <li><a href="#tab-2" data-toggle="tab">PLATFORM-INDEPENDENT SETUP</a></li>
+              <li><a href="#tab-3" data-toggle="tab">YOUR OWN OAUTH<span class="big_number">2</span>ME ON GITHUB</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade in active" id="tab-1">
@@ -98,7 +99,22 @@
               <div class="tab-pane fade" id="tab-2">
                 <div class="row">
                   <div class="col-lg-6 col-lg-offset-3">
-                    <h3>How to install your own OAuth2.me?</h3>
+                    <h4>To use oauth2.me service you need to:</h4>
+                    <ol>
+                      <li>
+                        Set your redirect uri to <a href="http://oauth2.me/redirect">http://oauth2.me/redirect</a>
+                      </li>
+                      <li>
+                        Your application should use the state parameter to pass your redirect URI encoded with base64
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-6 col-lg-offset-3">
+                    <div class="testi">How to install your own OAuth2.me?</div>
                     <div class="testi">Make a fork of our repository <a href="https://github.com/tmwh/oauth2-me-ruby/fork">https://github.com/tmwh/oauth2-me-ruby/fork </a></div>
                     <div class="testi">Remove the `CNAME` file from the root.</div>
                     <div class="testi">Wait until github will compile the website for you.</div>
@@ -115,23 +131,22 @@
     <div class="container">
       <div class="row centered white-text">
         <div class="col-lg-12">
-        <h3>YOUR OWN OAUTH<span class="big_number">2</span>ME ON GITHUB</h3>
-        <div class="row testi">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <img class="img-on-skills1" src="assets/img/1.png" alt="">
+          <div class="row testi">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img class="img-on-skills1" src="assets/img/1.png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 text_left below">
+              For each new projects you should go to on OAuth2 provider site and setup new app. So with this gem you do not need it at all.
+            </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 text_left below">
-            For each new projects you should go to on OAuth2 provider site and setup new app. So with this gem you do not need it at all.
+          <div class="row testi">
+            <div class="col-lg-6 col-md-6 col-sm-6 text_left below_2">
+              You want to share your public app which use OAuth2 and you want to add Deploy to Heroku button in order to have one-click installation you should use our gem. So user should not setup their app on oauth2 providers in order to check how your app works.
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <img class="img-on-skills2" src="assets/img/2.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="row testi">
-          <div class="col-lg-6 col-md-6 col-sm-6 text_left below_2">
-            You want to share your public app which use OAuth2 and you want to add Deploy to Heroku button in order to have one-click installation you should use our gem. So user should not setup their app on oauth2 providers in order to check how your app works.
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <img class="img-on-skills2" src="assets/img/2.png" alt="">
-          </div>
-        </div>
         </div>
       </div>
     </div>
